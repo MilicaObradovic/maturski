@@ -1,3 +1,33 @@
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');
+
 body {
-    background-color: #cce0ff;
+    background-image: url("./pozadinaa.jpeg");
+}
+
+.panel-default > .panel-heading-custom {
+    background-image: url("./pozadinaa.jpeg");
+    color: rgb(59, 59, 59);
+    border-width: 0px;
+ }
+
+.panel-body{
+    background-image: url("./pozadinaa.jpeg");
+    color: rgb(59, 59, 59); 
+    border-width: 0px;
+}
+
+img {
+    border-radius: 8px;
+    /* border-width: 4px; */
+    }
+.jumbotron{
+    /* background-color: gray; */
+    background-image: url("./pozadinaa.jpeg");
+    text-align: center;
+    color: white;
+}
+
+#button{
+    background-image: url("./pozadinaa.jpeg");
+    color: white;
 }

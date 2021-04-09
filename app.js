@@ -12,16 +12,21 @@ var objects = [];
 // uzimamo id-jeve slika i smestamo u promenljive
 var kuca = document.getElementById("kuca");
 var drvo = document.getElementById("drvo");
+var putic = document.getElementById("putic");
 
 // EventListener-i za slike
 kuca.addEventListener("click", loadKuca, false);
 drvo.addEventListener("click", loadDrvo, false);
+putic.addEventListener("click", loadPutic, false);
 
 function loadKuca(){
     loadModel("kuca");
 }
 function loadDrvo(){
     loadModel("drvo");
+}
+function loadPutic(){
+    loadModel("putic");
 }
 
 // funkcija za ucitavanje modela
@@ -58,6 +63,7 @@ function loadModel(naziv) {
     )
 }
 
+
 function init() {
     // dodavanje container-a
     container = document.createElement('div');
@@ -90,8 +96,8 @@ function init() {
 
     // dodavanje OrbitControls (pomeranje kamere)
     orbitControl = new THREE.OrbitControls(camera, renderer.domElement);
-    orbitControl.maxPolarAngle = Math.PI * 0.5;
-    orbitControl.minDistance = 1000;
+    orbitControl.maxPolarAngle = Math.PI * 0.45;
+    orbitControl.minDistance = 500;
     orbitControl.maxDistance = 5000;
 
     // dodavanje podloge
